@@ -1,0 +1,92 @@
+// GENERAL PROJECT STYLES
+.main-wrp
+    padding: 40px 0
+    background-color: #dedede
+    height: 100%
+    h1
+        text-align: center
+        padding-bottom: 20px
+        font-weight: 700
+    h6
+        font-weight: 700
+.container
+    max-width: 1300px
+    margin: 0 auto
+.inputs-block, .range-block,.result-block
+    display: flex
+    max-width: 1300px
+    margin: 0 auto
+
+    padding: 0 100px 0
+    .input-block
+        margin-right: 100px
+        &:last-child
+            margin-left: auto
+            margin-right: 0
+
+        .input
+            margin: 10px 0
+            border-radius: 5px
+            padding: 20px
+            background: #dedede
+            box-shadow: -5px -5px 10px #b6b6b6, 5px 5px 10px #ffffff
+
+.inputs-wrp
+    display: flex
+    max-width: 300px
+    flex-direction: column
+.total
+    background: none
+    max-width: 200px
+    font-weight: 700
+    font-size: 50px
+.range-block
+    display: block
+    font-weight: 700
+
+    input[type=range]
+        width: 200px
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+
+    input[type=range]::-webkit-slider-runnable-track
+        border-radius: 10px/100%
+        height: 7px
+        background-color: #fff
+
+    input[type=range]::-webkit-slider-thumb
+        background: #2d97b1
+
+        border-radius: 10px/100%
+        cursor: pointer
+        width: 15px
+        height: 15px
+        -webkit-appearance: none
+        margin-top: -4px
+
+    input[type=range]::-moz-range-track
+        border-radius: 10px/100%
+        height: 5px
+        background-color: #fff
+
+    input[type=range]::-moz-range-thumb
+        background: #ecf0f1
+        border-radius: 10px/100%
+        cursor: pointer
+
+.result-block input
+    background: none
+    font-weight: 700
+@media (max-width: 1300px)
+    .inputs-block, .range-block,.result-block
+        display: flex
+        flex-direction: column
+        margin: 0
+        padding: 0
+        align-items: center
+        .input-block
+            margin-right: 0
+            &:last-child
+                margin-left: 0
+                margin-right: 0

@@ -1,0 +1,61 @@
+<!--#set var="title" value="Калькулятор доходов/расходов" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="main-wrp">
+    <div class="container">
+        <h1>Калькулятор доходов</h1>
+        <div class="inputs-block">
+            <div class="input-block column">
+                <h6>Доход в месяц</h6>
+                <div class="inputs-wrp">
+                    <input type="number" class="input" id="income-salary" placeholder="Зарплата" />
+                    <input type="number" class="input" id="income-freelance" placeholder="Фриланс" />
+                    <input type="number" class="input" id="income-extra-1" placeholder="Доп. доход" />
+                    <input type="number" class="input" id="income-extra-2" placeholder="Доп. доход" />
+                </div>
+            </div>
+            <div class="input-block column">
+                <h6>Обязательные расходы</h6>
+                <div class="inputs-wrp">
+                    <input type="number" class="input" id="costs-flat" placeholder="Аренда квартиры" />
+                    <input type="number" class="input" id="costs-house-services" placeholder="ЖКХ" />
+                    <input type="number" class="input" id="costs-transport" placeholder="Транспорт" />
+                    <input type="number" class="input" id="costs-food" placeholder="Еда" />
+                </div>
+            </div>
+            <div class="input-block column">
+                <div class="total-num">
+                    <h6>Доступно в месяц (без копилки):</h6>
+                    <input type="number" value="0" id="total-month" class="total" readonly />
+                </div>
+                <div class="total-num">
+                    <h6>Доступно в день:</h6>
+                    <input type="number" value="0" id="total-day" class="total" readonly />
+                </div>
+                <div class="total-num">
+                    <h6>Накопим за год:</h6>
+                    <input type="number" value="0" id="total-year" class="total" readonly />
+                </div>
+            </div>
+
+        </div>
+        <div class="range-block">
+            <h6>Копилка (Сколько откладываем)</h6>
+            <div class="range-wrp">
+                <input type="range" id="money-box-range" min="0" max="100" value="0">
+            </div>
+            <div><span id="total-percents">0</span>%</div>
+        </div>
+        <div class="result-block">
+            <div class="total-numb">
+                <h6>Копим:</h6>
+                <input type="number" id="accumulation" value="0" readonly="readonly">
+            </div>
+            <div class="total-numb">
+                <h6>Тратим:</h6>
+                <input type="number" id="spend" value="0" readonly="readonly">
+            </div>
+        </div>
+    </div>
+
+    <!--#include virtual="/parts/footer.html" -->
